@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* ### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background: hsl(204, 43%, 93%);
+}
+.container{
+    width: 50%;
+    border-radius: 0.6rem;
+}
+@media (max-width:1200px){
+    .container{
+        width: 65%;
+        margin: 1rem;
+    }
+}
+@media (max-width:470px){
+    .container{
+        width: 100%;
+        margin: 3rem 1rem;
+    }
+}
+.box-1{
+    background: white;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+.box-2{
+    background: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 0.6rem;
+}
+.box-3{
+    background: hsl(179, 42%, 56%);
+    border-radius: 0 0 0.6rem 0;
+}
+@media (max-width:992px){
+    .box-1{
+        background: white;
+        border-radius: 0.6rem 0.6rem 0 0;
+    }
+    .box-2{
+        background: hsl(179, 62%, 43%);
+        border-radius: 0;
+    }
+    .box-3{
+        background: hsl(179, 42%, 56%);
+        border-radius: 0 0 0.6rem 0.6rem;
+    }
+}
+.box-1 h1:first-child{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: cyan;
+}
+.box-1 h2:nth-last-child(2){
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(71, 73%, 54%);
+}
+.box-1 p:last-child{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+}
+.box-2 h3:first-child{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+.box-2 div h1:first-child{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+.box-2 div span:last-child{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+}
+.box-2 p:nth-last-child(2){
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+.box-2 button:last-child{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    padding: 1rem;
+}
+.box-2 button:last-child:hover{
+    background-color: hsl(71, 100%, 50%);
+}
+.box-3 h5:first-child{
+    font-weight: 700;
+    color: white;
+}
+.box-3 p:last-child{
+    font-size: 0.9rem;
+    color: white;
+    padding-right: 4rem;
+}
